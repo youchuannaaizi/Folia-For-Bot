@@ -1,0 +1,17 @@
+# plugin.yml - 更新后的配置文件
+main: xyz.ycmc.mc.plugins.bot.YCBot
+name: YCMC-Bot
+version: 1.46
+authors: [YCBOT]
+description: 高级假人管理系统
+commands:
+  bot:
+    description: 控制假人系统
+    usage: |
+      /bot spawn <名称> - 生成新假人
+      /bot kill <名称>  - 移除指定假人
+      /bot list       - 列出所有假人
+permissions:
+  paper.command.npc:
+    description: 允许使用NPC命令
+    default: op
